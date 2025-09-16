@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block body %}
+<h3>Accueil</h3>
+<p>Bienvenue sur le site {{ nom }}</p><br>
+<p>Le nom est : {{ nom }}</p>
+<p>La date de naissance est : {{ dateNaissance.format('d/m/Y') }}</p>
+<p>La rue est : {{ adresse.rue }}</p>
+{% endblock %}

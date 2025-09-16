@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormsController!{% endblock %}
+
+{% block body %}
+
+{{ form_start (animalForm)}}
+{{ form_widget (animalForm)}}
+<input type="submit" value="Insert">
+{{ form_end (animalForm)}}
+
+
+{% endblock %}
