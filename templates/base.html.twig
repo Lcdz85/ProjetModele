@@ -8,6 +8,7 @@
         {% endblock %}
 
         {% block javascripts %}
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
@@ -15,6 +16,3 @@
         {% block body %}Je suis la base{% endblock %}
     </body>
 </html>
-
-
-<!-- la base sert de template où les infos des autres pages.html.twig viendront se mettre le block body ds le block body et ainsi de suite -->
